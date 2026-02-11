@@ -1,6 +1,7 @@
 // app/layout.tsx (o app/layout.jsx)
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import localFont from "next/font/local";
 import Script from "next/script";
 import "./globals.css";
 
@@ -12,6 +13,12 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+const dancingScript = localFont({
+  src: "../public/fonts/DancingScript-SemiBold.ttf",
+  variable: "--font-dancing-script",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -27,7 +34,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body className={`${geistSans.variable} ${geistMono.variable} ${dancingScript.variable} antialiased`}>
         {children}
 
         {/* Google tag (gtag.js) - cargamos solo una vez */}
