@@ -91,7 +91,7 @@ export function Testimonials({ testimonials, autoPlayInterval = 6000 }: Testimon
 
                     {/* Testimonial text */}
                     <p className="text-gray-700 text-lg md:text-xl text-center mb-8 italic leading-relaxed relative z-10">
-                      "{testimonial.text}"
+                      &ldquo;{testimonial.text}&rdquo;
                     </p>
 
                     {/* Author info */}

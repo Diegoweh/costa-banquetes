@@ -35,7 +35,7 @@ export function ContentSection() {
               <WiSunset className="w-8 h-8 text-yellow-700" />
             </div>
             <h3 className="text-xl font-semibold text-gray-800 mb-2">Ceremonia en la playa</h3>
-            <p className="text-gray-600">Tu "si acepto" con los pies en la arena y el atardecer del Pacifico como testigo. Decoracion personalizada con pergola frente al mar.</p>
+            <p className="text-gray-600">Tu &ldquo;si acepto&rdquo; con los pies en la arena y el atardecer del Pacifico como testigo. Decoracion personalizada con pergola frente al mar.</p>
           </div>
 
           <div className="text-center">

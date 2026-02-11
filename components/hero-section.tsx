@@ -21,7 +21,7 @@ export function HeroSection() {
             TU BODA GRATIS* | Con 20 hab x 2 noches
           </div>
           <h1 className="text-5xl md:text-7xl font-light mb-6 text-balance ">
-            "Si quiero, pero<span className="block font-semibold font-[family-name:var(--font-dancing-script)]">en el mar"</span>
+            &ldquo;Si quiero, pero<span className="block font-semibold font-[family-name:var(--font-dancing-script)]">en el mar&rdquo;</span>
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-2xl mx-auto text-pretty">
             Despierta donde comienza tu para siempre. Una boda frente al Pacifico donde cada detalle esta pensado para que solo te preocupes por disfrutar.
