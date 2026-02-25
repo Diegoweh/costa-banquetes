@@ -47,14 +47,15 @@ export function Testimonials({ testimonials, autoPlayInterval = 6000 }: Testimon
   };
 
   return (
-    <div className="py-20 bg-gradient-to-b from-yellow-50 to-white">
+    <div className="py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-light text-gray-800 mb-4">
+          <h2 className="font-[var(--font-dancing-script)] text-3xl md:text-4xl lg:text-[2.75rem] leading-snug text-[#727054]"
+          style={{ fontFamily: "var(--font-dancing-script)" }}>
             Lo que dicen nuestras parejas
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-xl text-[#8e6b16] max-w-2xl mx-auto">
             Historias reales de bodas inolvidables en Costa de Oro
           </p>
         </div>
@@ -71,7 +72,7 @@ export function Testimonials({ testimonials, autoPlayInterval = 6000 }: Testimon
                 <div key={index} className="min-w-full px-4">
                   <div className="bg-white rounded-2xl shadow-lg p-8 md:p-12 relative">
                     {/* Quote icon */}
-                    <div className="absolute top-6 left-6 text-yellow-500 opacity-20">
+                    <div className="absolute top-6 left-6 text-[#727054] opacity-20">
                       <FaQuoteLeft className="w-12 h-12" />
                     </div>
 
@@ -82,7 +83,7 @@ export function Testimonials({ testimonials, autoPlayInterval = 6000 }: Testimon
                           key={i}
                           className={`w-6 h-6 ${
                             i < testimonial.rating
-                              ? "text-yellow-500"
+                              ? "text-[#727054]"
                               : "text-gray-300"
                           }`}
                         />
@@ -96,7 +97,7 @@ export function Testimonials({ testimonials, autoPlayInterval = 6000 }: Testimon
 
                     {/* Author info */}
                     <div className="text-center relative z-10">
-                      <p className="font-semibold text-gray-800 text-lg">
+                      <p className="font-semibold text-[#727054] text-lg">
                         {testimonial.name}
                       </p>
                       <p className="text-gray-600">{testimonial.location}</p>
@@ -115,7 +116,7 @@ export function Testimonials({ testimonials, autoPlayInterval = 6000 }: Testimon
             <>
               <button
                 onClick={goToPrevious}
-                className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-12 bg-yellow-500 hover:bg-yellow-600 text-white p-3 rounded-full transition-all duration-200 hover:scale-110 shadow-lg"
+                className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-12 bg-[#727054] hover:bg-[#8e6b16] text-white p-3 rounded-full transition-all duration-200 hover:scale-110 shadow-lg"
                 aria-label="Previous testimonial"
               >
                 <IoChevronBack className="w-6 h-6" />
@@ -123,7 +124,7 @@ export function Testimonials({ testimonials, autoPlayInterval = 6000 }: Testimon
 
               <button
                 onClick={goToNext}
-                className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 md:translate-x-12 bg-yellow-500 hover:bg-yellow-600 text-white p-3 rounded-full transition-all duration-200 hover:scale-110 shadow-lg"
+                className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 md:translate-x-12 bg-[#727054] hover:bg-[#8e6b16] text-white p-3 rounded-full transition-all duration-200 hover:scale-110 shadow-lg"
                 aria-label="Next testimonial"
               >
                 <IoChevronForward className="w-6 h-6" />
@@ -140,7 +141,7 @@ export function Testimonials({ testimonials, autoPlayInterval = 6000 }: Testimon
                   onClick={() => goToSlide(index)}
                   className={`w-3 h-3 rounded-full transition-all duration-200 ${
                     index === currentIndex
-                      ? "bg-yellow-500 w-8"
+                      ? "bg-[#727054] w-8"
                       : "bg-gray-300 hover:bg-gray-400"
                   }`}
                   aria-label={`Go to testimonial ${index + 1}`}

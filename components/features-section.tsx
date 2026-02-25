@@ -1,0 +1,82 @@
+import Image from "next/image";
+
+const features = [
+  {
+    heading: "Ceremonia en la playa",
+    body: 'Tu "si acepto" con los pies en la arena y el atardecer del Pacifico como testigo. Decoracion personalizada con pergola frente al mar.',
+    image: "/img/intro-1.webp",
+    alt: "Ceremonia de boda en la playa con pergola decorada con flores blancas frente al mar",
+  },
+  {
+    heading: "Todo incluido, cero estres",
+    body: "Wedding planner dedicada + banquete gourmet + decoracion + coordinacion completa. Tu solo disfruta tu dia.",
+    image: "/img/intro-2.webp",
+    alt: "Mesa de banquete elegante con vajilla dorada, copas de cristal y arreglo floral blanco",
+  },
+  {
+    heading: "Tus invitados, felices",
+    body: "Hospedaje all-inclusive con tarifas especiales. Todos disfrutan, tu te relajas sabiendo que estan en el paraiso.",
+    image: "/img/intro-3.webp",
+    alt: "Huespedes disfrutando de la piscina del resort con vista al mar y palmeras",
+  },
+];
+
+export function FeaturesSection() {
+  return (
+    <section className=" py-16 px-6 md:py-24 md:px-12 lg:px-20">
+      {/* Section heading */}
+      <div className="mx-auto max-w-4xl text-center mb-14 md:mb-20">
+        <h2
+          className="font-[var(--font-dancing-script)] text-3xl md:text-4xl lg:text-[2.75rem] leading-snug text-[#727054]"
+          style={{ fontFamily: "var(--font-dancing-script)" }}
+        >
+          {"Mas que una boda,"}
+          <br />
+          {"una experiencia que todos recordaran"}
+        </h2>
+        <p className="mt-4 text-sm md:text-base text-[#727054] italic">
+          En Costa de Oro creamos momentos que tus invitados contaran por anos
+        </p>
+      </div>
+
+      {/* Feature rows */}
+      <div className="mx-auto max-w-5xl flex flex-col gap-12 md:gap-16">
+        {features.map((feature, index) => {
+          const isReversed = index % 2 !== 0;
+
+          return (
+            <div
+              key={feature.heading}
+              className={`flex flex-col items-center gap-6 md:gap-10 ${
+                isReversed ? "md:flex-row-reverse" : "md:flex-row"
+              }`}
+            >
+              {/* Text */}
+              <div className="flex-1 md:max-w-sm">
+                <h3 className="text-lg md:text-xl font-bold italic text-[#8e6b16] mb-3">
+                  {feature.heading}
+                </h3>
+                <p className="text-sm md:text-base leading-relaxed text-gray-700">
+                  {feature.body}
+                </p>
+              </div>
+
+              {/* Image */}
+              <div className="flex-1 w-full">
+                <div className="relative aspect-[4/3] w-full overflow-hidden rounded-xl">
+                  <Image
+                    src={feature.image}
+                    alt={feature.alt}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
+                </div>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </section>
+  );
+}

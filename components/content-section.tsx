@@ -5,6 +5,9 @@ import { MdOutlineWorkspacePremium } from "react-icons/md";
 import { ImageCarousel } from "./image-carousel";
 import { Testimonials } from "./testimonials";
 import { FaCheck } from "react-icons/fa";
+import { IntroSection } from "./intro-section";
+import { FeaturesSection } from "./features-section";
+import { CtaSection } from "./cta-section";
 
 
 
@@ -21,15 +24,11 @@ export function ContentSection() {
     <div className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main Content */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-light text-gray-800 mb-6 text-balance">Mas que una boda, una experiencia que todos recordaran</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto text-pretty">
-            En Costa de Oro creamos momentos que tus invitados contaran por años
-          </p>
-        </div>
+        <IntroSection />
 
         {/* Features Grid */}
-        <div className="grid md:grid-cols-3 gap-8 mb-20">
+        <FeaturesSection />
+        {/* <div className="grid md:grid-cols-3 gap-8 mb-20">
           <div className="text-center">
             <div className="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
               <WiSunset className="w-8 h-8 text-yellow-700" />
@@ -60,8 +59,10 @@ export function ContentSection() {
             <h3 className="text-xl font-semibold text-gray-800 mb-2">Tus invitados, felices</h3>
             <p className="text-gray-600">Hospedaje all-inclusive con tarifas especiales. Todos disfrutan, tu te relajas sabiendo que estan en el paraiso.</p>
           </div>
-        </div>
+        </div> */}
 
+        
+        
         {/* Image Gallery Carousel */}
         <div className="mb-20">
           <ImageCarousel
@@ -114,39 +115,8 @@ export function ContentSection() {
         />
 
         {/* Call to Action */}
-        <div className="text-center bg-yellow-50 rounded-2xl p-12">
-          <h3 className="text-3xl font-semibold text-gray-800 mb-4">Las mejores fechas se van rápido</h3>
-          <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            Los atardeceres de febrero a abril son los mas romanticos del Pacifico. Si ya tienen fecha en mente, es momento de asegurar su dia sonado.
-          </p>
+        <CtaSection />
 
-          {/* Urgency box */}
-          <div className="mx-auto max-w-[600px] rounded-[20px] border-2 border-white/30 bg-white/15 p-10 backdrop-blur-[10px]">
-            <h3 className="mb-5 text-2xl font-semibold text-gray-800">Reserva este mes y recibe:
-            </h3>
-            <ul className="space-y-3 text-left">
-              {perks.map((perk) => (
-                <li key={perk} className="flex items-start gap-3 py-2 text-gray-800">
-                  <FaCheck className="mt-0.5 h-5 w-5 shrink-0 text-yellow-500" strokeWidth={3} />
-                  {perk}
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="https://hotelcostadeoro.mx/english/index.html?open=reserva" className="bg-yellow-500 hover:bg-yellow-700 text-white px-8 py-3 rounded-lg text-lg font-medium transition-colors">
-              Agendar videollamada con wedding planner
-            </a >
-            <a href="tel:18773418355" className="border-2 border-yellow-500 text-yellow-700 hover:bg-yellow-500 hover:text-white px-8 py-3 rounded-lg text-lg font-medium transition-colors">
-              WhatsApp: Quiero mi boda aqui
-            </a >
-            
-          </div>
-          <p className="mt-8 text-sm text-gray-800">
-              Llamada gratuita USA/Canada: 1-877-341-8355
-            </p>
-        </div>
       </div>
     </div>
   )
