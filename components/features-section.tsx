@@ -2,8 +2,8 @@ import Image from "next/image";
 
 const features = [
   {
-    heading: "Ceremonia a la orilla de la playa",
-    body: 'Tu "si acepto" con los pies en la arena y el atardecer del Pacifico como testigo. Decoración personalizada con pérgola frente al mar.',
+    heading: "Ceremonia con vista a la playa",
+    body: 'Tu "si acepto" con vista al mar y el atardecer del Pacifico como testigo. Decoración personalizada con pérgola frente al mar.',
     image: "/img/intro-1.webp",
     alt: "Ceremonia de boda en la playa con pérgola decorada con flores blancas frente al mar",
   },
@@ -62,7 +62,7 @@ export function FeaturesSection() {
 
               {/* Image */}
               <div className="flex-1 w-full">
-                <div className="relative aspect-[4/3] w-full overflow-hidden rounded-xl">
+                <div className="relative aspect-[4/2] w-full overflow-hidden rounded-xl">
                   <Image
                     src={feature.image}
                     alt={feature.alt}

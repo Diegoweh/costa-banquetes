@@ -8,12 +8,12 @@ export function HeroSection() {
           alt="Pareja de novios abrazados frente al mar"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-black/20" />
+        <div className="absolute inset-0 bg-black/20" /> 
       </div>
 
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center justify-end h-full pb-[12%]">
-        <h1 className="text-center text-[--color-hero-text] drop-shadow-lg">
+        <h1 className="text-center text-[#ffffff] drop-shadow-lg">
           <span className="block text-4xl md:text-6xl lg:text-7xl font-royale-serif">
             {"S\u00ed quiero,"}
           </span>
@@ -28,7 +28,7 @@ export function HeroSection() {
         {/* CTA Button */}
         <a
           href="https://hotelcostadeoro.mx/english/index.html?open=reserva"
-          className="mt-8 inline-block bg-[#727054] hover:bg-[--color-hero-cta-hover] text-[--color-hero-text] px-5 py-1 text-shadow-lg text-sm md:text-base font-bold font-royale-sans tracking-widest uppercase transition-colors rounded-2xl"
+          className="mt-8 inline-block bg-[#727054] hover:bg-[#8e6b16] text-[#ffffff] px-5 py-1 text-shadow-lg text-sm md:text-base font-bold font-royale-sans tracking-widest uppercase transition-colors rounded-2xl"
         >
           Tu boda gratis*
         </a>
