@@ -1,8 +1,13 @@
+"use client";
+
 import Link from "next/link";
+import { useState } from "react";
 
 export function Navigation() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
   return (
-    <nav className="bg-[#727054] backdrop-blur-sm fixed top-0 left-0 right-0 z-50 border-b border-gray-100">
+    <nav className="bg-transparent fixed inset-x-0 top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -10,7 +15,7 @@ export function Navigation() {
             <Link href="/" className="flex items-center space-x-2">
             {/* Logo image */}
             <img 
-              src="./img/costa-logo.png" 
+              src="./co-logo.png" 
               alt="Costa de Oro Logo" 
               width="90" 
               height="90" 
@@ -67,14 +72,42 @@ export function Navigation() {
           {/* </div> */}
 
           {/* Mobile menu button */}
-          <div className="md:hidden">
-            <button className="text-gray-600 hover:text-white">
+          {/* <div className="md:hidden">
+            <button
+              type="button"
+              aria-label="Abrir menu"
+              aria-expanded={isMobileMenuOpen}
+              onClick={() => setIsMobileMenuOpen((prev) => !prev)}
+              className="text-white hover:text-white/80"
+            >
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
               </svg>
             </button>
-          </div>
+          </div> */}
         </div>
+
+        {/* {isMobileMenuOpen && (
+          <div className="md:hidden pb-4 pt-1">
+            <div className="rounded-xl bg-black/15 p-3 flex flex-col gap-2">
+              <Link href="/habitaciones" className="text-white text-sm font-semibold tracking-wide uppercase">
+                Habitaciones
+              </Link>
+              <Link href="/todo-incluido" className="text-white text-sm font-semibold tracking-wide uppercase">
+                Todo incluido
+              </Link>
+              <Link href="/restaurantes" className="text-white text-sm font-semibold tracking-wide uppercase">
+                Restaurantes
+              </Link>
+              <Link href="/eventos" className="text-white text-sm font-semibold tracking-wide uppercase">
+                Eventos
+              </Link>
+              <Link href="/mazatlan" className="text-white text-sm font-semibold tracking-wide uppercase">
+                Mazatlan
+              </Link>
+            </div>
+          </div>
+        )} */}
       </div>
     </nav>
   )

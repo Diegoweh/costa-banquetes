@@ -14,12 +14,12 @@ export function HeroSection() {
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center justify-end h-full pb-[12%]">
         <h1 className="text-center text-[--color-hero-text] drop-shadow-lg">
-          <span className="block text-4xl md:text-6xl lg:text-7xl italic font-light leading-tight">
+          <span className="block text-4xl md:text-6xl lg:text-7xl font-royale-serif">
             {"S\u00ed quiero,"}
           </span>
           <span
-            className="block text-5xl md:text-7xl lg:text-8xl italic font-normal leading-tight"
-            style={{ fontFamily: "var(--font-dancing-script), cursive" }}
+            className="block text-6xl md:text-8xl lg:text-9xl font-royale-script"
+
           >
             pero en el mar
           </span>
@@ -28,13 +28,13 @@ export function HeroSection() {
         {/* CTA Button */}
         <a
           href="https://hotelcostadeoro.mx/english/index.html?open=reserva"
-          className="mt-8 inline-block bg-[#727054] hover:bg-[--color-hero-cta-hover] text-[--color-hero-text] px-8 py-3 text-sm md:text-base font-bold tracking-widest uppercase transition-colors rounded-2xl"
+          className="mt-8 inline-block bg-[#727054] hover:bg-[--color-hero-cta-hover] text-[--color-hero-text] px-5 py-1 text-shadow-lg text-sm md:text-base font-bold font-royale-sans tracking-widest uppercase transition-colors rounded-2xl"
         >
           Tu boda gratis*
         </a>
 
         {/* Subtext */}
-        <p className="mt-3 text-sm md:text-base text-black drop-shadow text-shadow-lg">
+        <p className="mt-3 text-sm md:text-base text-gray-800 drop-shadow text-shadow-lg">
           Con 20 hab. x 2 noches
         </p>
       </div>

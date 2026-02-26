@@ -21,10 +21,11 @@ export function ContentSection() {
 ]
 
   return (
-    <div className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="bg-white">
+      <IntroSection />
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20">
         {/* Main Content */}
-        <IntroSection />
 
         {/* Features Grid */}
         <FeaturesSection />
@@ -114,10 +115,10 @@ export function ContentSection() {
           autoPlayInterval={6000}
         />
 
-        {/* Call to Action */}
-        <CtaSection />
-
       </div>
+
+      {/* Call to Action */}
+      <CtaSection />
     </div>
   )
 }

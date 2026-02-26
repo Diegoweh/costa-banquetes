@@ -1,8 +1,8 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { IoChevronBack, IoChevronForward } from "react-icons/io5";
-import { FaStar, FaQuoteLeft } from "react-icons/fa";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+import Image from "next/image";
 
 interface Testimonial {
   name: string;
@@ -17,7 +17,10 @@ interface TestimonialsProps {
   autoPlayInterval?: number;
 }
 
-export function Testimonials({ testimonials, autoPlayInterval = 6000 }: TestimonialsProps) {
+export function Testimonials({
+  testimonials,
+  autoPlayInterval = 6000,
+}: TestimonialsProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
 
@@ -33,7 +36,10 @@ export function Testimonials({ testimonials, autoPlayInterval = 6000 }: Testimon
 
   const goToPrevious = () => {
     setIsAutoPlaying(false);
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + testimonials.length) % testimonials.length);
+    setCurrentIndex(
+      (prevIndex) =>
+        (prevIndex - 1 + testimonials.length) % testimonials.length
+    );
   };
 
   const goToNext = () => {
@@ -41,27 +47,31 @@ export function Testimonials({ testimonials, autoPlayInterval = 6000 }: Testimon
     setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
   };
 
-  const goToSlide = (index: number) => {
-    setIsAutoPlaying(false);
-    setCurrentIndex(index);
-  };
-
   return (
-    <div className="py-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-20 ">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center mb-12">
-          <h2 className="font-[var(--font-dancing-script)] text-3xl md:text-4xl lg:text-[2.75rem] leading-snug text-[#727054]"
-          style={{ fontFamily: "var(--font-dancing-script)" }}>
+        <div className="text-center mb-10">
+          <h2 className="text-3xl md:text-4xl lg:text-[3rem] leading-snug text-[#727054] font-royale-script">
             Lo que dicen nuestras parejas
           </h2>
-          <p className="text-xl text-[#8e6b16] max-w-2xl mx-auto">
+          <p className="font-serif text-base md:text-xl text-[#8e6b16] mt-1">
             Historias reales de bodas inolvidables en Costa de Oro
           </p>
+          {/* Hearts decoration */}
+          <div className="flex justify-end mt-3">
+            <Image
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/hearts-x7AM73sewZk24pIgmf5YT9stLlCdHA.png"
+              alt="Decorative hearts"
+              width={120}
+              height={50}
+              className="w-[120px] md:w-[200px] lg:w-[280px] h-auto object-contain"
+            />
+          </div>
         </div>
 
         {/* Testimonial Carousel */}
-        <div className="relative max-w-4xl mx-auto">
+        <div className="relative">
           {/* Main testimonial display */}
           <div className="relative overflow-hidden">
             <div
@@ -69,41 +79,35 @@ export function Testimonials({ testimonials, autoPlayInterval = 6000 }: Testimon
               style={{ transform: `translateX(-${currentIndex * 100}%)` }}
             >
               {testimonials.map((testimonial, index) => (
-                <div key={index} className="min-w-full px-4">
-                  <div className="bg-white rounded-2xl shadow-lg p-8 md:p-12 relative">
-                    {/* Quote icon */}
-                    <div className="absolute top-6 left-6 text-[#727054] opacity-20">
-                      <FaQuoteLeft className="w-12 h-12" />
-                    </div>
-
-                    {/* Stars */}
-                    <div className="flex justify-center mb-6 relative z-10">
-                      {[...Array(5)].map((_, i) => (
-                        <FaStar
-                          key={i}
-                          className={`w-6 h-6 ${
-                            i < testimonial.rating
-                              ? "text-[#727054]"
-                              : "text-gray-300"
-                          }`}
-                        />
-                      ))}
-                    </div>
-
-                    {/* Testimonial text */}
-                    <p className="text-gray-700 text-lg md:text-xl text-center mb-8 italic leading-relaxed relative z-10">
-                      &ldquo;{testimonial.text}&rdquo;
-                    </p>
+                <div key={index} className="min-w-full px-10 md:px-16">
+                  <div className="text-center">
+                    {/* Testimonial text with large quote marks */}
+                    <blockquote className="relative">
+                      <p className="text-[#727054] text-xl md:text-2xl lg:text-[1.65rem] text-center font-royale-serif leading-relaxed mt-24">
+                        <span className="text-[#cecdc0] text-5xl md:text-6xl font-serif leading-none align-top">
+                          {"\u201C"}
+                        </span>
+                        {testimonial.text}
+                        <span className="text-[#cecdc0] text-5xl md:text-6xl font-serif leading-none align-bottom">
+                          {"\u201D"}
+                        </span>
+                      </p>
+                    </blockquote>
 
                     {/* Author info */}
-                    <div className="text-center relative z-10">
-                      <p className="font-semibold text-[#727054] text-lg">
+                    <div className="mt-8">
+                      <p className="font-royale-serif text-[#cecdc0] text-3xl md:text-5xl">
                         {testimonial.name}
                       </p>
-                      <p className="text-gray-600">{testimonial.location}</p>
-                      {testimonial.date && (
-                        <p className="text-gray-500 text-sm mt-1">{testimonial.date}</p>
-                      )}
+                      <p className="text-[#727054] font-royale-serif text-md md:text-lg mt-1">
+                        {testimonial.location}
+                        {testimonial.date && (
+                          <span>
+                            {". "}
+                            {testimonial.date}
+                          </span>
+                        )}
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -111,46 +115,28 @@ export function Testimonials({ testimonials, autoPlayInterval = 6000 }: Testimon
             </div>
           </div>
 
-          {/* Navigation buttons */}
+          {/* Navigation arrows */}
           {testimonials.length > 1 && (
             <>
               <button
                 onClick={goToPrevious}
-                className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-12 bg-[#727054] hover:bg-[#8e6b16] text-white p-3 rounded-full transition-all duration-200 hover:scale-110 shadow-lg"
+                className="absolute left-0 top-1/2 -translate-y-1/2 text-[#727054] hover:text-[#727054] transition-colors duration-200 cursor-pointer"
                 aria-label="Previous testimonial"
               >
-                <IoChevronBack className="w-6 h-6" />
+                <ChevronLeft className="w-8 h-8 md:w-10 md:h-10" strokeWidth={1.5} />
               </button>
 
               <button
                 onClick={goToNext}
-                className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 md:translate-x-12 bg-[#727054] hover:bg-[#8e6b16] text-white p-3 rounded-full transition-all duration-200 hover:scale-110 shadow-lg"
+                className="absolute right-0 top-1/2 -translate-y-1/2 text-[#727054] hover:text-[#727054] transition-colors duration-200 cursor-pointer"
                 aria-label="Next testimonial"
               >
-                <IoChevronForward className="w-6 h-6" />
+                <ChevronRight className="w-8 h-8 md:w-10 md:h-10" strokeWidth={1.5} />
               </button>
             </>
           )}
-
-          {/* Dots indicator */}
-          {testimonials.length > 1 && (
-            <div className="flex justify-center gap-2 mt-8">
-              {testimonials.map((_, index) => (
-                <button
-                  key={index}
-                  onClick={() => goToSlide(index)}
-                  className={`w-3 h-3 rounded-full transition-all duration-200 ${
-                    index === currentIndex
-                      ? "bg-[#727054] w-8"
-                      : "bg-gray-300 hover:bg-gray-400"
-                  }`}
-                  aria-label={`Go to testimonial ${index + 1}`}
-                />
-              ))}
-            </div>
-          )}
         </div>
       </div>
-    </div>
+    </section>
   );
 }

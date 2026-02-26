@@ -21,51 +21,51 @@ export function Footer() {
               </Link>
             </div>
 
-            <p className="text-white mb-6 max-w-md">
+            <p className="text-white font-royale-serif mb-6 max-w-md">
               Hotel Costa de Oro, tu destino de lujo en Mazatlán. Vive experiencias
               inolvidables frente al Océano Pacífico con un servicio todo incluido
               diseñado para disfrutar cada momento.
             </p>
 
-            <div className="flex space-x-4">
+            {/* <div className="flex space-x-4">
               <a href="#" className="text-white hover:text-zinc-500 transition-colors">
-                {/* Twitter / X */}
+                
                 <FaFacebook className="w-6 h-6" />
               </a>
 
               <a href="#" className="text-white hover:text-zinc-500 transition-colors">
-                {/* Pinterest */}
+                
                 <FaInstagram className="w-6 h-6" />
               </a>
-            </div>
+            </div> */}
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-semibold text-white mb-4">Enlaces rápidos</h4>
+            <h4 className="font-royale-sans text-[#be9c2b] mb-4">Enlaces rápidos</h4>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-white hover:text-zinc-500 transition-colors">
+                <a href="#" className="text-white font-royale-serif hover:text-zinc-500 transition-colors">
                   Habitaciones
                 </a>
               </li>
               <li>
-                <a href="#" className="text-white hover:text-zinc-500 transition-colors">
+                <a href="#" className="text-white font-royale-serif hover:text-zinc-500 transition-colors">
                   Restaurantes
                 </a>
               </li>
               <li>
-                <a href="#" className="text-white hover:text-zinc-500 transition-colors">
+                <a href="#" className="text-white font-royale-serif hover:text-zinc-500 transition-colors">
                   Eventos
                 </a>
               </li>
               <li>
-                <a href="#" className="text-white hover:text-zinc-500 transition-colors">
+                <a href="#" className="text-white font-royale-serif hover:text-zinc-500 transition-colors">
                   Actividades
                 </a>
               </li>
               <li>
-                <a href="#" className="text-white hover:text-zinc-500 transition-colors">
+                <a href="#" className="text-white font-royale-serif hover:text-zinc-500 transition-colors">
                   Spa
                 </a>
               </li>
@@ -74,8 +74,8 @@ export function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h4 className="font-semibold text-white mb-4">Contacto</h4>
-            <div className="space-y-2 text-white">
+            <h4 className="font-royale-sans text-[#be9c2b] mb-4">Contacto</h4>
+            <div className="space-y-2 text-white font-royale-serif">
               <p>Camarón Sábalo 710</p>
               <p>Mazatlán, Sinaloa</p>
               <p>México 82110</p>
@@ -93,7 +93,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-white mt-12 pt-8 text-center text-[#243e54]">
+        <div className=" mt-12 pt-8 text-center text-white">
           <p>&copy; 2026 Hotel Costa de Oro. Todos los derechos reservados.</p>
         </div>
       </div>

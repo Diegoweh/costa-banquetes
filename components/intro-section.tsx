@@ -1,6 +1,6 @@
 export function IntroSection() {
   return (
-    <section className="relative w-full bg-[--color-section-bg]">
+    <section className="relative w-full bg-[url('/img/bg-intro.png')] bg-cover bg-center bg-no-repeat">
       {/* Decorative lace border at top */}
       {/* <div className="w-full overflow-hidden">
         <svg
@@ -30,8 +30,8 @@ export function IntroSection() {
       <div className="flex flex-col items-center px-6 py-12 md:py-16 lg:py-20">
         {/* Script Heading */}
         <h2
-          className="text-center text-[#727054] text-3xl md:text-4xl lg:text-5xl leading-snug"
-          style={{ fontFamily: "var(--font-dancing-script), cursive" }}
+          className="text-center text-[#727054] text-4xl md:text-5xl lg:text-6xl leading-snug font-royale-script"
+          
         >
           Despierta donde comienza
           <br />
@@ -39,7 +39,7 @@ export function IntroSection() {
         </h2>
 
         {/* Body Text */}
-        <p className="mt-6 max-w-xl text-center text-[#727054] text-sm md:text-base leading-relaxed">
+        <p className="mt-6 max-w-xl text-center text-gray-500 text-md md:text-lg leading-relaxed font-royale-serif">
           Una boda frente al Pac&iacute;fico donde cada detalle est&aacute; pensado
           para que solo te preocupes por disfrutar.
         </p>
@@ -49,8 +49,7 @@ export function IntroSection() {
 
         {/* Price callout */}
         <p
-          className="mt-6 text-center text-[#727054] text-lg md:text-xl lg:text-2xl italic"
-          style={{ fontFamily: "var(--font-dancing-script), cursive" }}
+          className="mt-6 text-center text-[#727054] text-md md:text-lg lg:text-xl font-royale-serif"          
         >
           <span className="align-super text-xs not-italic">*</span>
           {"O desde $60,000 MXN todo incluido frente al mar."}
@@ -60,13 +59,13 @@ export function IntroSection() {
         <div className="mt-8 flex flex-col sm:flex-row items-center gap-4">
           <a
             href="#cita"
-            className="inline-block bg-[#727054] text-[--color-section-bg] px-8 py-3 text-xs md:text-sm font-bold tracking-widest uppercase transition-colors hover:opacity-90 rounded-2xl"
+            className="inline-block bg-[#727054] text-[--color-section-bg] px-3 py-1 text-xs md:text-sm font-royale-sans tracking-widest uppercase transition-colors hover:opacity-90 rounded-lg"
           >
             Cita Wedding Planner
           </a>
           <a
             href="#paquetes"
-            className="inline-block border border-[#727054] text-[#727054] bg-transparent px-8 py-3 text-xs md:text-sm font-bold tracking-widest uppercase transition-colors hover:bg-[#727054]/10 rounded-2xl"
+            className="inline-block border border-[#727054] text-[#727054] bg-[#727054]/30 px-3 py-1 text-xs md:text-sm font-royale-sans tracking-widest uppercase transition-colors hover:bg-transparent rounded-lg"
           >
             Paquetes de Boda
           </a>
