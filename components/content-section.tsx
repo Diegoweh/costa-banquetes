@@ -8,6 +8,7 @@ import { FaCheck } from "react-icons/fa";
 import { IntroSection } from "./intro-section";
 import { FeaturesSection } from "./features-section";
 import { CtaSection } from "./cta-section";
+import { PaquetesSection } from "./paquetes-section";
 
 
 
@@ -29,6 +30,7 @@ export function ContentSection() {
 
         {/* Features Grid */}
         <FeaturesSection />
+        <PaquetesSection />
         {/* <div className="grid md:grid-cols-3 gap-8 mb-20">
           <div className="text-center">
             <div className="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
