@@ -32,7 +32,7 @@ export function HeroSection() {
 
         {/* CTA Button */}
         <a
-          href="https://hotelcostadeoro.mx/english/index.html?open=reserva"
+          href="#paquetes"
           className="mt-8 inline-block bg-[#727054] hover:bg-[#8e6b16] text-[#ffffff] px-5 py-1 text-shadow-lg text-sm md:text-base font-bold font-royale-sans tracking-widest uppercase transition-colors rounded-2xl"
         >
           Tu boda gratis*

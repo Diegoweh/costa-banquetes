@@ -92,7 +92,8 @@ export function CtaSection() {
         {/* Buttons */}
         <div className="mt-12 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <Link
-            href="#agendar"
+            href="https://wa.link/f9dhvq"
+            target="_blank"
             className="font-royale-sans inline-block rounded px-5 py-2 text-sm font-bold uppercase tracking-wider transition-colors"
             style={{
               backgroundColor: "#8a7d4a",
@@ -102,7 +103,8 @@ export function CtaSection() {
             Agendar videollamada / Wedding Planner
           </Link>
           <Link
-            href="#whatsapp"
+            href="https://wa.link/rf3032"
+            target="_blank"
             className="font-royale-sans inline-block rounded border-2 px-5 py-2 text-sm font-bold uppercase tracking-wider transition-colors"
             style={{
               borderColor: "#6b6b6b",

@@ -84,8 +84,8 @@ export function Footer() {
                 </a>
               </p>
               <p>
-                <a href="mailto:info@hotelcostadeoro.mx" className="hover:text-zinc-500 transition-colors">
-                  info@hotelcostadeoro.mx
+                <a href="mailto:eventos@hotelcostadeoro.mx" className="hover:text-zinc-500 transition-colors">
+                  eventos@hotelcostadeoro.mx
                 </a>
               </p>
             </div>
