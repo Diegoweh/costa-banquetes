@@ -62,7 +62,7 @@ export function Testimonials({
           <div className="flex justify-end mt-3">
             <Image
               src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/hearts-x7AM73sewZk24pIgmf5YT9stLlCdHA.png"
-              alt="Decorative hearts"
+              alt="Corazones decorativos"
               width={120}
               height={50}
               className="w-[120px] md:w-[200px] lg:w-[280px] h-auto object-contain"
@@ -121,7 +121,7 @@ export function Testimonials({
               <button
                 onClick={goToPrevious}
                 className="absolute left-0 top-1/2 -translate-y-1/2 text-[#727054] hover:text-[#727054] transition-colors duration-200 cursor-pointer"
-                aria-label="Previous testimonial"
+                aria-label="Testimonio anterior"
               >
                 <ChevronLeft className="w-8 h-8 md:w-10 md:h-10" strokeWidth={1.5} />
               </button>
@@ -129,7 +129,7 @@ export function Testimonials({
               <button
                 onClick={goToNext}
                 className="absolute right-0 top-1/2 -translate-y-1/2 text-[#727054] hover:text-[#727054] transition-colors duration-200 cursor-pointer"
-                aria-label="Next testimonial"
+                aria-label="Siguiente testimonio"
               >
                 <ChevronRight className="w-8 h-8 md:w-10 md:h-10" strokeWidth={1.5} />
               </button>

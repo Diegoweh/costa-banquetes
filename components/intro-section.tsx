@@ -43,8 +43,8 @@ export function IntroSection() {
 
         {/* Body Text */}
         <p className="mt-6 max-w-xl text-center text-gray-500 text-md md:text-lg leading-relaxed font-royale-serif">
-          Una boda frente al Pac&iacute;fico donde cada detalle est&aacute; pensado
-          para que solo te preocupes por disfrutar.
+          Una boda frente al Pacífico donde cada detalle está pensado para que
+          solo te preocupes por disfrutar.
         </p>
 
         {/* Separator */}

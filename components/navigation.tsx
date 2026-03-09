@@ -1,11 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
 
 export function Navigation() {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
   return (
     <nav className="bg-transparent fixed inset-x-0 top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -75,7 +72,7 @@ export function Navigation() {
           {/* <div className="md:hidden">
             <button
               type="button"
-              aria-label="Abrir menu"
+              aria-label="Abrir menú"
               aria-expanded={isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen((prev) => !prev)}
               className="text-white hover:text-white/80"
@@ -103,7 +100,7 @@ export function Navigation() {
                 Eventos
               </Link>
               <Link href="/mazatlan" className="text-white text-sm font-semibold tracking-wide uppercase">
-                Mazatlan
+                Mazatlán
               </Link>
             </div>
           </div>

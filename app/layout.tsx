@@ -5,9 +5,9 @@ import { SITE_URL } from "@/lib/site";
 import "./globals.css";
 
 const siteName = "Hotel Costa de Oro";
-const defaultTitle = "Bodas en la Playa en Mazatlan | Hotel Costa de Oro";
+const defaultTitle = "Bodas en la Playa en Mazatlán | Hotel Costa de Oro";
 const defaultDescription =
-  "Celebra tu boda en la playa en Mazatlan con Hotel Costa de Oro. Paquetes de boda, wedding planner, banquete, hospedaje frente al mar y atardeceres en la Zona Dorada.";
+  "Celebra tu boda en la playa en Mazatlán con Hotel Costa de Oro. Paquetes de boda, wedding planner, banquete, hospedaje frente al mar y atardeceres en la Zona Dorada.";
 
 const dancingScript = localFont({
   src: "../public/fonts/DancingScript-SemiBold.ttf",
@@ -41,12 +41,12 @@ export const metadata: Metadata = {
   },
   description: defaultDescription,
   keywords: [
-    "bodas en mazatlan",
+    "bodas en mazatlán",
     "boda en la playa",
     "hotel costa de oro",
-    "wedding planner mazatlan",
-    "paquetes de boda mazatlan",
-    "banquetes de boda mazatlan",
+    "wedding planner mazatlán",
+    "paquetes de boda mazatlán",
+    "banquetes de boda mazatlán",
     "hotel para bodas en sinaloa",
     "boda frente al mar",
   ],
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
         url: `${SITE_URL}/img/costa-hero.webp`,
         width: 1200,
         height: 630,
-        alt: "Montaje de boda frente al mar en Hotel Costa de Oro, Mazatlan",
+        alt: "Montaje de boda frente al mar en Hotel Costa de Oro, Mazatlán",
       },
     ],
   },

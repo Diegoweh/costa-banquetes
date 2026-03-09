@@ -20,23 +20,22 @@ export function ContentSection() {
               id="galeria-bodas"
               className="text-3xl md:text-4xl font-royale-serif text-[#727054]"
             >
-              Galeria de bodas en la playa
+              Galería de bodas en la playa
             </h2>
             <p className="mt-3 text-gray-600 font-royale-serif">
-              Explora montajes, ceremonias y recepciones realizadas frente al mar en Mazatlan.
+              Explora montajes, ceremonias y recepciones realizadas frente al mar en Mazatlán.
             </p>
           </div>
           <ImageCarousel
-            slides={[
-              {
+            slides={[{
                 image: "./img/hero1.webp",
-                title: "Decoracion de Ensueño",
-                description: "Transformamos tu vision en realidad con decoracion personalizada, desde elegantes pergolas frente al mar hasta detalles que reflejan tu estilo unico."
+                title: "Decoración de Ensueño",
+                description: "Transformamos tu visión en realidad con decoración personalizada, desde elegantes pérgolas frente al mar hasta detalles que reflejan tu estilo único."
               },
               {
                 image: "./img/hero2.webp",
                 title: "Amplios Espacios para Celebrar",                
-                description: "Desde ceremonias intimas en la playa hasta recepciones grandiosas en nuestros salones, tenemos el espacio perfecto para tu boda de ensueño."
+                description: "Desde ceremonias íntimas en la playa hasta recepciones grandiosas en nuestros salones, tenemos el espacio perfecto para tu boda de ensueño."
               },
               {
                 image: "./img/pergola.webp",

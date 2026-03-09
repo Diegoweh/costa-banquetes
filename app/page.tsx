@@ -5,9 +5,9 @@ import { Navigation } from "@/components/navigation";
 import { SITE_URL } from "@/lib/site";
 import type { Metadata } from "next";
 
-const pageTitle = "Bodas en la Playa en Mazatlan";
+const pageTitle = "Bodas en la Playa en Mazatlán";
 const pageDescription =
-  "Descubre paquetes de boda y banquetes frente al mar en Hotel Costa de Oro, Mazatlan. Agenda con nuestra wedding planner y celebra tu boda en la Zona Dorada.";
+  "Descubre paquetes de boda y banquetes frente al mar en Hotel Costa de Oro, Mazatlán. Agenda con nuestra wedding planner y celebra tu boda en la Zona Dorada.";
 
 export const metadata: Metadata = {
   title: pageTitle,
@@ -33,7 +33,7 @@ const structuredData = {
       "@id": `${SITE_URL}/#hotel`,
       name: "Hotel Costa de Oro",
       description:
-        "Hotel frente al mar en la Zona Dorada de Mazatlan con paquetes para bodas, banquetes y hospedaje para invitados.",
+        "Hotel frente al mar en la Zona Dorada de Mazatlán con paquetes para bodas, banquetes y hospedaje para invitados.",
       url: `${SITE_URL}/`,
       telephone: "+52-669-913-5344",
       email: "info@hotelcostadeoro.mx",
@@ -43,8 +43,8 @@ const structuredData = {
       ],
       address: {
         "@type": "PostalAddress",
-        streetAddress: "Camaron Sabalo 710",
-        addressLocality: "Mazatlan",
+        streetAddress: "Camarón Sábalo 710",
+        addressLocality: "Mazatlán",
         addressRegion: "Sinaloa",
         postalCode: "82110",
         addressCountry: "MX",

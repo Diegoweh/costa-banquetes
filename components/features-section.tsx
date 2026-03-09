@@ -4,13 +4,13 @@ import { BASE_PATH } from "@/lib/site";
 const features = [
   {
     heading: "Ceremonia con vista a la playa",
-    body: 'Tu "si acepto" con vista al mar y el atardecer del Pacifico como testigo. Decoración personalizada con pérgola frente al mar.',
+    body: 'Tu "sí acepto" con vista al mar y el atardecer del Pacífico como testigo. Decoración personalizada con pérgola frente al mar.',
     image: `${BASE_PATH}/img/intro-1.webp`,
     alt: "Ceremonia de boda en la playa con pérgola decorada con flores blancas frente al mar",
   },
   {
-    heading: "Todo incluido, cero estres",
-    body: "Wedding planner dedicada + banquete gourmet + decoración + coordinación completa. Tu solo disfruta tu día.",
+    heading: "Todo incluido, cero estrés",
+    body: "Wedding planner dedicada + banquete gourmet + decoración + coordinación completa. Tú solo disfruta de tu día.",
     image: `${BASE_PATH}/img/intro-2.webp`,
     alt: "Mesa de banquete elegante con vajilla dorada, copas de cristal y arreglo floral blanco",
   },
@@ -32,10 +32,10 @@ export function FeaturesSection() {
         >
           {"Más que una boda,"}
           <br />
-          {"una experiencia que todos recordaran"}
+          {"una experiencia que todos recordarán"}
         </h2>
         <p className="mt-4 text-sm md:text-base text-[#727054] font-royale-serif">
-          En Costa de Oro creamos momentos que tus invitados contaran por años
+          En Costa de Oro creamos momentos que tus invitados contarán por años
         </p>
       </div>
 

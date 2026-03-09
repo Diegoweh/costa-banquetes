@@ -10,7 +10,7 @@ const benefits = [
   },
   {
     icon: `${BASE_PATH}/icons/photo.png`,
-    text: "Sesion de fotos pre-boda en la playa (1 hora)",
+    text: "Sesión de fotos preboda en la playa (1 hora)",
     bold: false,
   },
   // {
@@ -110,7 +110,7 @@ export function CtaSection() {
               backgroundColor: "transparent",
             }}
           >
-            {'Whatsapp: quiero mi boda aqui'}
+            {"WhatsApp: quiero mi boda aquí"}
           </Link>
         </div>
       </div>
