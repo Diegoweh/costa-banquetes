@@ -1,10 +1,15 @@
+import { BASE_PATH } from "@/lib/site";
+
 export function HeroSection() {
   return (
-    <section className="relative w-full aspect-[16/9] max-h-screen overflow-hidden">
+    <section
+      className="relative w-full aspect-[16/9] max-h-screen overflow-hidden"
+      aria-label="Bodas frente al mar en Hotel Costa de Oro"
+    >
       {/* Background Image */}
       <div className="absolute inset-0">
         <img
-          src="/img/hero-img.webp"
+          src={`${BASE_PATH}/img/hero-img.webp`}
           alt="Pareja de novios abrazados frente al mar"
           className="w-full h-full object-cover"
         />

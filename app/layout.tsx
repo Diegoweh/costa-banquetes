@@ -1,19 +1,13 @@
 // app/layout.tsx (o app/layout.jsx)
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import localFont from "next/font/local";
-import Script from "next/script";
+import { SITE_URL } from "@/lib/site";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const siteName = "Hotel Costa de Oro";
+const defaultTitle = "Bodas en la Playa en Mazatlan | Hotel Costa de Oro";
+const defaultDescription =
+  "Celebra tu boda en la playa en Mazatlan con Hotel Costa de Oro. Paquetes de boda, wedding planner, banquete, hospedaje frente al mar y atardeceres en la Zona Dorada.";
 
 const dancingScript = localFont({
   src: "../public/fonts/DancingScript-SemiBold.ttf",
@@ -40,9 +34,59 @@ const royaleCoutureSerif = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Hotel Costa de Oro | Mazatlán, Sinaloa",
-  description:
-    "Disfruta de tus vacaciones en el Hotel Costa de Oro, ubicado en la Zona Dorada de Mazatlán. Hotel familiar frente al mar con alberca, buffet, noches temáticas, shows en vivo y todo incluido. La mejor opción para relajarte y divertirte con toda la familia.",
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: defaultTitle,
+    template: `%s | ${siteName}`,
+  },
+  description: defaultDescription,
+  keywords: [
+    "bodas en mazatlan",
+    "boda en la playa",
+    "hotel costa de oro",
+    "wedding planner mazatlan",
+    "paquetes de boda mazatlan",
+    "banquetes de boda mazatlan",
+    "hotel para bodas en sinaloa",
+    "boda frente al mar",
+  ],
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    url: SITE_URL,
+    title: defaultTitle,
+    description: defaultDescription,
+    siteName,
+    locale: "es_MX",
+    images: [
+      {
+        url: `${SITE_URL}/img/costa-hero.webp`,
+        width: 1200,
+        height: 630,
+        alt: "Montaje de boda frente al mar en Hotel Costa de Oro, Mazatlan",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: defaultTitle,
+    description: defaultDescription,
+    images: [`${SITE_URL}/img/costa-hero.webp`],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
+  category: "weddings",
 };
 
 export default function RootLayout({
@@ -53,7 +97,7 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${dancingScript.variable} ${royaleCoutureSans.variable} ${royaleCoutureScript.variable} ${royaleCoutureSerif.variable} antialiased`}
+        className={`${dancingScript.variable} ${royaleCoutureSans.variable} ${royaleCoutureScript.variable} ${royaleCoutureSerif.variable} antialiased`}
       >
         {children}
 

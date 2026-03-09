@@ -1,15 +1,20 @@
+import { BASE_PATH } from "@/lib/site";
+
 const paquetes = [
-  { label: "Paquete 1", href: "/pdf/PAQUETE-DE-BODAS-CDO-2026.pdf" },
-  { label: "Paquete 2", href: "/pdf/PAQUETE-DE-BODAS-CDO-2027.pdf" },
-  { label: "Paquete 3", href: "/pdf/Boda-Banquete-2026.pdf" },
-  { label: "Paquete 4", href: "/pdf/Boda-Banquete-2027.pdf" },
+  { label: "Paquete de bodas gratis 2026", href: `${BASE_PATH}/pdf/PAQUETE-DE-BODAS-CDO-2026.pdf` },
+  { label: "Paquete de bodas gratis 2027", href: `${BASE_PATH}/pdf/PAQUETE-DE-BODAS-CDO-2027.pdf` },
+  { label: "Paquete de banquetes gratis 2026", href: `${BASE_PATH}/pdf/Boda-Banquete-2026.pdf` },
+  { label: "Paquete de banquetes gratis 2027", href: `${BASE_PATH}/pdf/Boda-Banquete-2027.pdf` },
 ];
 
 export function PaquetesSection() {
   return (
-    <section className="mb-20">
+    <section id="paquetes" className="mb-20" aria-labelledby="paquetes-heading">
       <div className="text-center mb-8">
-        <h2 className="text-3xl md:text-4xl font-royale-serif text-[#727054]">
+        <h2
+          id="paquetes-heading"
+          className="text-3xl md:text-4xl font-royale-serif text-[#727054]"
+        >
           Paquetes
         </h2>
         <p className="mt-2 text-gray-600 font-royale-serif">Consulta nuestros paquetes</p>

@@ -1,6 +1,9 @@
 export function IntroSection() {
   return (
-    <section className="relative w-full bg-[url('/img/bg-intro.png')] bg-cover bg-center bg-no-repeat">
+    <section
+      id="experiencia"
+      className="relative w-full bg-[url('/img/bg-intro.png')] bg-cover bg-center bg-no-repeat"
+    >
       {/* Decorative lace border at top */}
       {/* <div className="w-full overflow-hidden">
         <svg
@@ -48,17 +51,17 @@ export function IntroSection() {
         <div className="mt-8 w-full max-w-lg border-t border-[#727054]" />
 
         {/* Price callout */}
-        <p
+        {/* <p
           className="mt-6 text-center text-[#727054] text-md md:text-lg lg:text-xl font-royale-serif"          
         >
           <span className="align-super text-xs not-italic">*</span>
           {"O desde $60,000 MXN todo incluido frente al mar."}
-        </p>
+        </p> */}
 
         {/* Buttons */}
         <div className="mt-8 flex flex-col sm:flex-row items-center gap-4">
           <a
-            href="#cita"
+            href="#agendar"
             className="inline-block bg-[#727054] text-[--color-section-bg] px-3 py-1 text-xs md:text-sm font-royale-sans tracking-widest uppercase transition-colors hover:opacity-90 rounded-lg"
           >
             Cita Wedding Planner

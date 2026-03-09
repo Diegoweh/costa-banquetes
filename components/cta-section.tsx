@@ -1,24 +1,25 @@
 import Image from "next/image";
 import Link from "next/link";
+import { BASE_PATH } from "@/lib/site";
 
 const benefits = [
   {
-    icon: "/icons/heart.png",
+    icon: `${BASE_PATH}/icons/heart.png`,
     text: "Upgrade gratis a suite nupcial",
     bold: true,
   },
   {
-    icon: "/icons/photo.png",
+    icon: `${BASE_PATH}/icons/photo.png`,
     text: "Sesion de fotos pre-boda en la playa (1 hora)",
     bold: false,
   },
+  // {
+  //   icon: "/icons/face.png",
+  //   text: "Spa de cortesia para la novia",
+  //   bold: true,
+  // },
   {
-    icon: "/icons/face.png",
-    text: "Spa de cortesia para la novia",
-    bold: true,
-  },
-  {
-    icon: "/icons/glass.png",
+    icon: `${BASE_PATH}/icons/glass.png`,
     text: "Botella de champagne en la suite",
     bold: false,
   },
@@ -26,9 +27,13 @@ const benefits = [
 
 export function CtaSection() {
   return (
-    <section className="relative py-16 md:py-20">
+    <section
+      id="agendar"
+      className="relative py-16 md:py-20"
+      aria-labelledby="agendar-boda-heading"
+    >
       <Image
-        src="/img/bg-cta.png"
+        src={`${BASE_PATH}/img/bg-cta.png`}
         alt=""
         fill
         className="object-cover"
@@ -41,7 +46,11 @@ export function CtaSection() {
         <div className="flex flex-col gap-10 md:flex-row md:gap-16">
           {/* Left column */}
           <div className="flex-1">
-            <h2 className="font-royale-serif text-2xl leading-snug md:text-3xl" style={{ color: "#4a4a4a" }}>
+            <h2
+              id="agendar-boda-heading"
+              className="font-royale-serif text-2xl leading-snug md:text-3xl"
+              style={{ color: "#4a4a4a" }}
+            >
               Las mejores fechas<br />
               se van rápido
             </h2>

@@ -1,22 +1,23 @@
 import Image from "next/image";
+import { BASE_PATH } from "@/lib/site";
 
 const features = [
   {
     heading: "Ceremonia con vista a la playa",
     body: 'Tu "si acepto" con vista al mar y el atardecer del Pacifico como testigo. Decoración personalizada con pérgola frente al mar.',
-    image: "/img/intro-1.webp",
+    image: `${BASE_PATH}/img/intro-1.webp`,
     alt: "Ceremonia de boda en la playa con pérgola decorada con flores blancas frente al mar",
   },
   {
     heading: "Todo incluido, cero estres",
     body: "Wedding planner dedicada + banquete gourmet + decoración + coordinación completa. Tu solo disfruta tu día.",
-    image: "/img/intro-2.webp",
+    image: `${BASE_PATH}/img/intro-2.webp`,
     alt: "Mesa de banquete elegante con vajilla dorada, copas de cristal y arreglo floral blanco",
   },
   {
     heading: "Tus invitados, felices",
     body: "Hospedaje all-inclusive con tarifas especiales. Todos disfrutan, tú te relajas sabiendo que están en el paraíso.",
-    image: "/img/intro-3.webp",
+    image: `${BASE_PATH}/img/intro-3.webp`,
     alt: "Huéspedes disfrutando de la piscina del resort con vista al mar y palmeras",
   },
 ];
