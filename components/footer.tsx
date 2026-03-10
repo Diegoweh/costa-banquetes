@@ -44,30 +44,23 @@ export function Footer() {
             <h4 className="font-royale-sans text-[#be9c2b] mb-4">Enlaces rápidos</h4>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-white font-royale-serif hover:text-zinc-500 transition-colors">
+                <a href="https://hotelcostadeoro.mx/pages/habitaciones.html" className="text-white font-royale-serif hover:text-zinc-500 transition-colors"
+                target="_blank" rel="noopener noreferrer">
                   Habitaciones
                 </a>
               </li>
               <li>
-                <a href="#" className="text-white font-royale-serif hover:text-zinc-500 transition-colors">
+                <a href="https://hotelcostadeoro.mx/pages/restaurante.html" className="text-white font-royale-serif hover:text-zinc-500 transition-colors"
+                target="_blank" rel="noopener noreferrer">
                   Restaurantes
                 </a>
               </li>
               <li>
-                <a href="#" className="text-white font-royale-serif hover:text-zinc-500 transition-colors">
+                <a href="https://hotelcostadeoro.mx/pages/eventos.html" className="text-white font-royale-serif hover:text-zinc-500 transition-colors"
+                target="_blank" rel="noopener noreferrer">
                   Eventos
                 </a>
-              </li>
-              <li>
-                <a href="#" className="text-white font-royale-serif hover:text-zinc-500 transition-colors">
-                  Actividades
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-white font-royale-serif hover:text-zinc-500 transition-colors">
-                  Spa
-                </a>
-              </li>
+              </li>                      
             </ul>
           </div>
 
