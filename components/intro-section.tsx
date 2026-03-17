@@ -33,7 +33,7 @@ export function IntroSection() {
       <div className="flex flex-col items-center px-6 py-12 md:py-16 lg:py-20">
         {/* Script Heading */}
         <h2
-          className="text-center text-[#727054] text-4xl md:text-5xl lg:text-6xl leading-snug font-royale-script"
+          className="text-center text-[#8e6b16] text-4xl md:text-5xl lg:text-6xl leading-snug font-royale-script"
           
         >
           Despierta donde comienza
@@ -48,11 +48,11 @@ export function IntroSection() {
         </p>
 
         {/* Separator */}
-        <div className="mt-8 w-full max-w-lg border-t border-[#727054]" />
+        <div className="mt-8 w-full max-w-lg border-t border-[#8e6b16]" />
 
         {/* Price callout */}
         {/* <p
-          className="mt-6 text-center text-[#727054] text-md md:text-lg lg:text-xl font-royale-serif"          
+          className="mt-6 text-center text-[#8e6b16] text-md md:text-lg lg:text-xl font-royale-serif"          
         >
           <span className="align-super text-xs not-italic">*</span>
           {"O desde $60,000 MXN todo incluido frente al mar."}
@@ -62,13 +62,13 @@ export function IntroSection() {
         <div className="mt-8 flex flex-col sm:flex-row items-center gap-4">
           <a
             href="#agendar"
-            className="inline-block bg-[#727054] text-[--color-section-bg] px-3 py-1 text-xs md:text-sm font-royale-sans tracking-widest uppercase transition-colors hover:opacity-90 rounded-lg"
+            className="inline-block bg-[#8e6b16] text-[--color-section-bg] px-3 py-1 text-xs md:text-sm font-royale-sans tracking-widest uppercase transition-colors hover:opacity-90 rounded-lg"
           >
             Cita Wedding Planner
           </a>
           <a
             href="#paquetes"
-            className="inline-block border border-[#727054] text-[#727054] bg-[#727054]/30 px-3 py-1 text-xs md:text-sm font-royale-sans tracking-widest uppercase transition-colors hover:bg-transparent rounded-lg"
+            className="inline-block border border-[#8e6b16] text-[#8e6b16] bg-[#8e6b16]/30 px-3 py-1 text-xs md:text-sm font-royale-sans tracking-widest uppercase transition-colors hover:bg-transparent rounded-lg"
           >
             Paquetes de Boda
           </a>

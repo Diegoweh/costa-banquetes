@@ -13,35 +13,34 @@ export function HeroSection() {
           alt="Pareja de novios abrazados frente al mar"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-black/20" /> 
+        <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-black/15 to-black/5" />
       </div>
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col items-center justify-end h-full pb-[12%]">
-        <h1 className="text-center text-[#ffffff] drop-shadow-lg">
-          <span className="block text-4xl md:text-6xl lg:text-7xl font-royale-serif">
-            {"S\u00ed quiero,"}
-          </span>
-          <span
-            className="block text-6xl md:text-8xl lg:text-9xl font-royale-script"
+      <div className="relative z-10 flex h-full items-end px-4 pb-5 sm:px-6 sm:pb-8 lg:px-12 lg:pb-12">
+        <div className="flex w-full max-w-[18rem] flex-col items-start rounded-[24px]  px-4 py-4 text-left backdrop-blur-[2px] sm:max-w-sm sm:px-5 sm:py-5 lg:max-w-lg lg:px-6 lg:py-6">
+          <h1 className="text-[#ffffff] drop-shadow-lg">
+            <span className="block font-royale-serif text-[1.7rem] leading-none sm:text-4xl md:text-5xl lg:text-6xl">
+              {"S\u00ed quiero,"}
+            </span>
+            <span className="block font-royale-script text-[3.4rem] leading-[0.88] sm:text-6xl md:text-7xl lg:text-8xl">
+              pero en el mar
+            </span>
+          </h1>
 
+          {/* CTA Button */}
+          <a
+            href="#paquetes"
+            className="mt-4 inline-block rounded-2xl bg-[#8e6b16] px-4 py-1 text-xs font-bold tracking-[0.18em] text-[#ffffff] text-shadow-lg uppercase transition-colors hover:bg-[#514528] sm:px-5 sm:text-sm md:text-base"
           >
-            pero en el mar
-          </span>
-        </h1>
+            Tu boda gratis*
+          </a>
 
-        {/* CTA Button */}
-        <a
-          href="#paquetes"
-          className="mt-8 inline-block bg-[#727054] hover:bg-[#8e6b16] text-[#ffffff] px-5 py-1 text-shadow-lg text-sm md:text-base font-bold font-royale-sans tracking-widest uppercase transition-colors rounded-2xl"
-        >
-          Tu boda gratis*
-        </a>
-
-        {/* Subtext */}
-        <p className="mt-3 text-sm md:text-base text-gray-800 drop-shadow text-shadow-lg">
-          Con 20 hab. x 2 noches
-        </p>
+          {/* Subtext */}
+          <p className="mt-2 text-xs text-white/85 drop-shadow sm:text-sm md:text-base">
+            Con 20 hab. x 2 noches
+          </p>
+        </div>
       </div>
     </section>
   );

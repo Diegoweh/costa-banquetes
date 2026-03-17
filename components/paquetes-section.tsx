@@ -13,7 +13,7 @@ export function PaquetesSection() {
       <div className="text-center mb-8">
         <h2
           id="paquetes-heading"
-          className="text-3xl md:text-4xl font-royale-serif text-[#727054]"
+          className="text-3xl md:text-4xl font-royale-serif text-[#8e6b16]"
         >
           Paquetes
         </h2>

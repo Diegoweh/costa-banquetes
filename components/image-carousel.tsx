@@ -89,7 +89,7 @@ export function ImageCarousel({ slides, autoPlayInterval = 5000 }: ImageCarousel
               onClick={() => goToSlide(index)}
               className={`w-3 h-3 rounded-full transition-all duration-200 ${
                 index === currentIndex
-                  ? "bg-[#727054] w-8"
+                  ? "bg-[#8e6b16] w-8"
                   : "bg-white/50 hover:bg-white/80"
               }`}
               aria-label={`Ir a la imagen ${index + 1}`}
@@ -100,7 +100,7 @@ export function ImageCarousel({ slides, autoPlayInterval = 5000 }: ImageCarousel
 
       {/* Slide information */}
       <div className="mt-6 text-center space-y-3">
-        <h3 className="text-2xl font-semibold text-[#727054] font-royale-serif">
+        <h3 className="text-2xl font-semibold text-[#8e6b16] font-royale-serif">
           {slides[currentIndex].title}
         </h3>
         <p className="text-gray-600 max-w-2xl mx-auto font-royale-serif">

@@ -52,7 +52,7 @@ export function Testimonials({
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-10">
-          <h2 className="text-3xl md:text-4xl lg:text-[3rem] leading-snug text-[#727054] font-royale-script">
+          <h2 className="text-3xl md:text-4xl lg:text-[3rem] leading-snug text-[#8e6b16] font-royale-script">
             Lo que dicen nuestras parejas
           </h2>
           <p className="font-serif text-base md:text-xl text-[#8e6b16] mt-1">
@@ -83,7 +83,7 @@ export function Testimonials({
                   <div className="text-center">
                     {/* Testimonial text with large quote marks */}
                     <blockquote className="relative">
-                      <p className="text-[#727054] text-xl md:text-2xl lg:text-[1.65rem] text-center font-royale-serif leading-relaxed mt-24">
+                      <p className="text-[#8e6b16] text-xl md:text-2xl lg:text-[1.65rem] text-center font-royale-serif leading-relaxed mt-24">
                         <span className="text-[#cecdc0] text-5xl md:text-6xl font-serif leading-none align-top">
                           {"\u201C"}
                         </span>
@@ -99,7 +99,7 @@ export function Testimonials({
                       <p className="font-royale-serif text-[#cecdc0] text-3xl md:text-5xl">
                         {testimonial.name}
                       </p>
-                      <p className="text-[#727054] font-royale-serif text-md md:text-lg mt-1">
+                      <p className="text-[#8e6b16] font-royale-serif text-md md:text-lg mt-1">
                         {testimonial.location}
                         {testimonial.date && (
                           <span>
@@ -120,7 +120,7 @@ export function Testimonials({
             <>
               <button
                 onClick={goToPrevious}
-                className="absolute left-0 top-1/2 -translate-y-1/2 text-[#727054] hover:text-[#727054] transition-colors duration-200 cursor-pointer"
+                className="absolute left-0 top-1/2 -translate-y-1/2 text-[#8e6b16] hover:text-[#4a3d1f] transition-colors duration-200 cursor-pointer"
                 aria-label="Testimonio anterior"
               >
                 <ChevronLeft className="w-8 h-8 md:w-10 md:h-10" strokeWidth={1.5} />
@@ -128,7 +128,7 @@ export function Testimonials({
 
               <button
                 onClick={goToNext}
-                className="absolute right-0 top-1/2 -translate-y-1/2 text-[#727054] hover:text-[#727054] transition-colors duration-200 cursor-pointer"
+                className="absolute right-0 top-1/2 -translate-y-1/2 text-[#8e6b16] hover:text-[#4a3d1f] transition-colors duration-200 cursor-pointer"
                 aria-label="Siguiente testimonio"
               >
                 <ChevronRight className="w-8 h-8 md:w-10 md:h-10" strokeWidth={1.5} />

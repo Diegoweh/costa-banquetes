@@ -28,13 +28,13 @@ export function FeaturesSection() {
       {/* Section heading */}
       <div className="mx-auto max-w-4xl text-center mb-14 md:mb-20">
         <h2
-          className=" text-3xl md:text-4xl lg:text-[2.75rem] leading-snug text-[#727054] font-royale-serif"          
+          className=" text-3xl md:text-4xl lg:text-[2.75rem] leading-snug text-[#8e6b16] font-royale-serif"          
         >
           {"Más que una boda,"}
           <br />
           {"una experiencia que todos recordarán"}
         </h2>
-        <p className="mt-4 text-sm md:text-base text-[#727054] font-royale-serif">
+        <p className="mt-4 text-sm md:text-base text-[#8e6b16] font-royale-serif">
           En Costa de Oro creamos momentos que tus invitados contarán por años
         </p>
       </div>

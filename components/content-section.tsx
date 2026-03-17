@@ -18,7 +18,7 @@ export function ContentSection() {
           <div className="mx-auto mb-8 max-w-3xl text-center">
             <h2
               id="galeria-bodas"
-              className="text-3xl md:text-4xl font-royale-serif text-[#727054]"
+              className="text-3xl md:text-4xl font-royale-serif text-[#8e6b16]"
             >
               Galería de bodas en la playa
             </h2>
@@ -51,7 +51,7 @@ export function ContentSection() {
           <div className="mx-auto mb-8 max-w-3xl text-center">
             <h2
               id="testimonios-bodas"
-              className="text-3xl md:text-4xl font-royale-serif text-[#727054]"
+              className="text-3xl md:text-4xl font-royale-serif text-[#8e6b16]"
             >
               Testimonios de parejas
             </h2>
