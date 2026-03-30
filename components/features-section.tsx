@@ -30,9 +30,9 @@ export function FeaturesSection() {
         <h2
           className=" text-3xl md:text-4xl lg:text-[2.75rem] leading-snug text-[#8e6b16] font-royale-serif"          
         >
-          {"Más que una boda,"}
+          {"Momentos que duran,"}
           <br />
-          {"una experiencia que todos recordarán"}
+          {"para siempre"}
         </h2>
         <p className="mt-4 text-sm md:text-base text-[#8e6b16] font-royale-serif">
           En Costa de Oro creamos momentos que tus invitados contarán por años

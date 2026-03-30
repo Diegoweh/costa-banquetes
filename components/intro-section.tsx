@@ -38,7 +38,7 @@ export function IntroSection() {
         >
           Despierta donde comienza
           <br />
-          tu para siempre
+          la magia
         </h2>
 
         {/* Body Text */}

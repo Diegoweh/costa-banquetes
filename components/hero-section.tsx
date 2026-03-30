@@ -21,11 +21,11 @@ export function HeroSection() {
         <div className="flex w-full max-w-[18rem] flex-col items-start rounded-[24px]  px-4 py-4 text-left backdrop-blur-[2px] sm:max-w-sm sm:px-5 sm:py-5 lg:max-w-lg lg:px-6 lg:py-6">
           <h1 className="text-[#ffffff] drop-shadow-lg">
             <span className="block font-royale-serif text-[1.7rem] leading-none sm:text-4xl md:text-5xl lg:text-6xl">
-              {"S\u00ed quiero,"}
+              {"S\u00ed acepto"}
             </span>
-            <span className="block font-royale-script text-[3.4rem] leading-[0.88] sm:text-6xl md:text-7xl lg:text-8xl">
+            {/* <span className="block font-royale-script text-[3.4rem] leading-[0.88] sm:text-6xl md:text-7xl lg:text-8xl">
               pero en el mar
-            </span>
+            </span> */}
           </h1>
 
           {/* CTA Button */}

@@ -72,8 +72,8 @@ export function Footer() {
               <p>Mazatlán, Sinaloa</p>
               <p>México 82110</p>
               <p className="mt-4">
-                <a href="tel:+526699135344" className="hover:text-zinc-500 transition-colors">
-                  +52 669 913 5344
+                <a href="tel:+526699132005" className="hover:text-zinc-500 transition-colors">
+                  +52 669 913 2005
                 </a>
               </p>
               <p>
