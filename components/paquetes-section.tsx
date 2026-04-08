@@ -1,10 +1,8 @@
 import { BASE_PATH } from "@/lib/site";
 
 const paquetes = [
-  { label: "Paquete de bodas gratis 2026", href: `${BASE_PATH}/pdf/PAQUETE-DE-BODAS-CDO-2026.pdf` },
-  { label: "Paquete de bodas gratis 2027", href: `${BASE_PATH}/pdf/PAQUETE-DE-BODAS-CDO-2027.pdf` },
-  { label: "Paquete de banquetes gratis 2026", href: `${BASE_PATH}/pdf/Boda-Banquete-2026.pdf` },
-  { label: "Paquete de banquetes gratis 2027", href: `${BASE_PATH}/pdf/Boda-Banquete-2027.pdf` },
+  { label: "Boda Gratis", href: `${BASE_PATH}/pdf/boda-gratis.pdf` },
+  { label: "Banquetes Local", href: `${BASE_PATH}/pdf/banquetes-local.pdf` },
 ];
 
 export function PaquetesSection() {
@@ -20,7 +18,7 @@ export function PaquetesSection() {
         <p className="mt-2 text-gray-600 font-royale-serif">Consulta nuestros paquetes</p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4">
         {paquetes.map((paquete) => (
           <a
             key={paquete.label}

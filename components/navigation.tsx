@@ -1,6 +1,9 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
+
+import { BASE_PATH } from "@/lib/site";
 
 export function Navigation() {
   return (
@@ -11,12 +14,11 @@ export function Navigation() {
           <div className="flex items-center">
             <Link href="/" className="flex items-center space-x-2">
             {/* Logo image */}
-            <img 
-              src="./co-logo.png" 
-              alt="Costa de Oro Logo" 
-              width="90" 
-              height="90" 
-              loading="lazy" 
+            <Image
+              src={`${BASE_PATH}/co-logo.png`}
+              alt="Costa de Oro Logo"
+              width={90}
+              height={90}
             />
 
             </Link>

@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState, useEffect } from "react";
 import { IoChevronBack, IoChevronForward } from "react-icons/io5";
 
@@ -53,11 +54,13 @@ export function ImageCarousel({ slides, autoPlayInterval = 5000 }: ImageCarousel
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}
         >
           {slides.map((slide, index) => (
-            <div key={index} className="min-w-full">
-              <img
+            <div key={index} className="relative min-w-full h-96 md:h-[500px]">
+              <Image
                 src={slide.image}
                 alt={slide.title}
-                className="w-full h-96 md:h-[500px] object-cover"
+                fill
+                sizes="100vw"
+                className="object-cover"
               />
             </div>
           ))}

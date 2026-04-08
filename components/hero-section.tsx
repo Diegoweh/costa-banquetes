@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import { BASE_PATH } from "@/lib/site";
 
 export function HeroSection() {
@@ -8,9 +10,12 @@ export function HeroSection() {
     >
       {/* Background Image */}
       <div className="absolute inset-0">
-        <img
+        <Image
           src={`${BASE_PATH}/img/hero-img.webp`}
           alt="Pareja de novios abrazados frente al mar"
+          fill
+          priority
+          sizes="100vw"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-black/15 to-black/5" />
@@ -20,7 +25,7 @@ export function HeroSection() {
       <div className="relative z-10 flex h-full items-end px-4 pb-5 sm:px-6 sm:pb-8 lg:px-12 lg:pb-12">
         <div className="flex w-full max-w-[18rem] flex-col items-start rounded-[24px]  px-4 py-4 text-left backdrop-blur-[2px] sm:max-w-sm sm:px-5 sm:py-5 lg:max-w-lg lg:px-6 lg:py-6">
           <h1 className="text-[#ffffff] drop-shadow-lg">
-            <span className="block font-royale-serif text-[1.7rem] leading-none sm:text-4xl md:text-5xl lg:text-6xl">
+            <span className="block font-royale-script text-[1.7rem] leading-none sm:text-5xl md:text-6xl lg:text-7xl">
               {"S\u00ed, acepto"}
             </span>
             {/* <span className="block font-royale-script text-[3.4rem] leading-[0.88] sm:text-6xl md:text-7xl lg:text-8xl">
