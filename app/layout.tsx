@@ -1,5 +1,6 @@
 // app/layout.tsx (o app/layout.jsx)
 import type { Metadata } from "next";
+import Script from "next/script";
 import localFont from "next/font/local";
 import { SITE_URL } from "@/lib/site";
 import "./globals.css";
@@ -102,9 +103,9 @@ export default function RootLayout({
         {children}
 
         {/* Google tag (gtag.js) - cargamos solo una vez */}
-        {/* <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-QT6XLVZ2KT"
-          strategy="beforeInteractive"
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-HTR15BQH44"
+          strategy="afterInteractive"
         />
         <Script id="gtag-init" strategy="afterInteractive">
           {`
@@ -113,12 +114,12 @@ export default function RootLayout({
             gtag('js', new Date());
 
             // Google Analytics 4
-            gtag('config', 'G-QT6XLVZ2KT');
+            gtag('config', 'G-HTR15BQH44');
 
             // Google Ads
-            gtag('config', 'AW-16783817896');
+            gtag('config', 'AW-11465431004');
           `}
-        </Script> */}
+        </Script>
       </body>
     </html>
   );
